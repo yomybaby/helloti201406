@@ -1,0 +1,7 @@
+<Alloy>
+	<Window title="Tab 1">
+		<TextArea id="ta"></TextArea>
+		<Button id="saveBtn" class="myBtn" backgroundColor="blue">Save</Button>
+		<Button id="cancelBtn" onClick="onCancelClick" backgroundColor="blue">cancel</Button>
+	</Window>
+</Alloy>

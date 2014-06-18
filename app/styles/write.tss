@@ -1,0 +1,51 @@
+"Window": {
+	backgroundColor: "#fff",
+	layout : 'vertical'
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "yellow",
+	font: {
+		fontSize: 20,
+		fontFamily: 'Helvetica Neue'
+	},
+	textAlign: 'center'
+} 
+
+"#btn" : {
+	width : "50%",
+	zIndex : 100
+}
+
+"Button" : {
+	top : 10,
+	left: 10,
+	right :10,
+	color : 'white'
+}
+
+"#saveBtn" : {
+	//color : 'red'
+}
+
+"#saveBtn[platform=ios]" : {
+	font :{
+		fontSize: 40
+	}
+}
+
+".myBtn" : {
+	color : 'green'
+}
+
+"#ta" : {
+	top : 30,
+	left: 10,
+	right : 10,
+	height : 100,
+	borderColor : 'gray',
+	borderWidth : 1,
+	color : '#333'
+}
