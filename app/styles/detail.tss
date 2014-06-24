@@ -1,0 +1,28 @@
+
+".container" : {
+	layout : 'vertical'  
+}
+
+".postInfoWrap" : {
+	height : 40
+}
+
+"#name" : {
+	left : 10,
+	font : {
+		fontWeight : 'bold',
+		fontSize : 16
+	}
+}
+
+"#date" : {
+	right : 10,
+	color : Alloy.Globals.color.gray
+}
+
+"#content" : {
+	left: 10,
+	right: 10,
+	height : Ti.UI.SIZE,
+	textAlign : 'left'
+}

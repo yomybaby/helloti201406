@@ -1,47 +1,27 @@
 "Window": {
 	backgroundColor: "#fff",
-	layout : 'vertical'
-}
-
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "yellow",
-	font: {
-		fontSize: 20,
-		fontFamily: 'Helvetica Neue'
-	},
-	textAlign: 'center'
-} 
-
-"#btn" : {
-	width : "50%",
-	zIndex : 100
+	layout : 'vertical',
+	title : '글쓰기'
 }
 
 "Button" : {
 	top : 10,
 	left: 10,
 	right :10,
-	color : 'white'
+	color : 'white',
+	height : 40
 }
 
 "#saveBtn" : {
-	//color : 'red'
+	backgroundColor : Alloy.Globals.color.blue
 }
 
-"#saveBtn[platform=ios]" : {
-	font :{
-		fontSize: 40
-	}
-}
-
-".myBtn" : {
-	color : 'green'
+"#cancelBtn" : {
+	backgroundColor : Alloy.Globals.color.gray
 }
 
 "#ta" : {
-	top : 30,
+	top : 10,
 	left: 10,
 	right : 10,
 	height : 100,

@@ -1,3 +1,7 @@
-"TextArea":{
-	backgroundColor :'yellow'
+"Window" : {
+	backgroundColor : 'white'
+}
+
+"Label" : {
+	color : '#333'
 }

@@ -1,0 +1,39 @@
+
+".container" : {
+  
+}
+
+"#formWrap" : {
+	layout : 'vertical',
+	height : Ti.UI.SIZE,
+	left: 30,
+	right : 30
+}
+
+"TextField" : {
+	width : Ti.UI.FILL,
+	borderWidth : 1,
+	borderColor : Alloy.Globals.color.green,
+	height : 40,
+	paddingLeft : 10
+}
+
+"Button" : {
+	width : Ti.UI.FILL,
+	backgroundColor : Alloy.Globals.color.blue,
+	color : 'white',
+	top : 10,
+	height : 40
+}
+
+"#username" : {
+	hintText : '아이디',
+	color : '#000'
+}
+
+"#password" : {
+	hintText : '비밀번호',
+	passwordMask : true,
+	color : '#000',
+	top : -1
+}

@@ -1,0 +1,10 @@
+<Alloy>
+	<Window class="container">
+		<View class="postInfoWrap">
+			<Label id="name">jong</Label>
+			<Label id="date">2014.06.25</Label>
+		</View>
+		<Label id="content">asdlkfjlasjdf</Label>
+		<ImageView id="photo"></ImageView>
+	</Window>
+</Alloy>
