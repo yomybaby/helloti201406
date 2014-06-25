@@ -14,3 +14,5 @@ Alloy.Globals.color = require('ios7colors');
 
 var Cloud = require('ti.cloud');
 Cloud.sessionId = Ti.App.Properties.getString('sessionId');
+
+var moment = require('alloy/moment');

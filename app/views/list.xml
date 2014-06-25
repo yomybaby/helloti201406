@@ -1,6 +1,6 @@
 <Alloy>
 	<Window class="container">
-		<ListView>
+		<ListView id="listView">
 			<HeaderView>
                 <View backgroundColor="#DDD" height="Ti.UI.SIZE">
                     <Label>Header View</Label>

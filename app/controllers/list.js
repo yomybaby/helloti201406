@@ -9,14 +9,14 @@ postC.on('reset add',function(){
 	
 	
 	postC.each(function(model){
-		Ti.API.info(model.attributes);
+
 		items.push({
 			template : 'template',
 			usernameLabel : {
-				text : model.get('username')
+				text : model.get('user').username
 			},
 			dateLabel : {
-				text : '2014.6.25'
+				text : moment(model.get('created_at')).fromNow()
 			},
 			contentLabel : {
 				text : model.get('content')
@@ -25,19 +25,38 @@ postC.on('reset add',function(){
 				image : 'http://pds27.egloos.com/pds/201301/27/91/b0075091_51050fb5687fa.jpg'
 			},
 			properties: {
-				height : 80
+				height : 80,
+				itemId : model.id
 			}
 		});	
 	});
 	$.section.items = items;
 });
 
-postC.fetch({
-	success: function(){
-		alert('succ');
-	},
-	error : function(){
-		alert('err');
-	}
+postC.fetch();
+
+$.listView.addEventListener('itemclick', function(e) {
+	var clickModel = postC.get(e.itemId);
+	
+	var detailCtrl = Alloy.createController('detail',{
+		model : clickModel
+	});
+	var win = detailCtrl.getView();
+	
+	Alloy.Globals.mainTabGroup.activeTab.open(win);
+	
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
