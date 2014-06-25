@@ -11,3 +11,5 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 
 Alloy.Globals.color = require('ios7colors');
+
+var Cloud = require('ti.cloud');
