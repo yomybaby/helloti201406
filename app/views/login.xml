@@ -4,7 +4,7 @@
 			<TextField id="username"></TextField>>
 			<TextField id="password"></TextField>>
 			<Button id="loginBtn">로그인</Button>
-			<Button id="fbBtn">페이스북 로그인</Button>
+			<Button id="fbBtn">페이스북으로 로그인</Button>
 		</View>
 	</Window>
 </Alloy>

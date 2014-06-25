@@ -1,5 +1,8 @@
 <Alloy>
 	<TabGroup>
+		<Tab>
+			<Require src="list"></Require>
+		</Tab>
 		<Tab title="Login">
 			<Require src="login"></Require>
 		</Tab>
