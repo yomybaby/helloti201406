@@ -26,7 +26,8 @@ postC.on('reset add',function(){
 			},
 			properties: {
 				height : 80,
-				itemId : model.id
+				itemId : model.id,
+				canEdit : true
 			}
 		});	
 	});
@@ -46,6 +47,18 @@ $.listView.addEventListener('itemclick', function(e) {
 	Alloy.Globals.mainTabGroup.activeTab.open(win);
 	
 });
+
+$.listView.addEventListener('delete', function(e) {
+	
+	var deleteModel = postC.get(e.itemId);
+	deleteModel.destroy({
+		success:function(){
+			alert('삭제되었습니다.');
+		}
+	});
+	
+});
+
 
 
 

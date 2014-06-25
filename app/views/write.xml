@@ -3,5 +3,6 @@
 		<TextArea id="ta"></TextArea>
 		<Button id="saveBtn">저장</Button>
 		<Button id="cancelBtn" onClick="onCancelClick">취소</Button>
+		<ImageView id="preview"></ImageView>
 	</Window>
 </Alloy>
