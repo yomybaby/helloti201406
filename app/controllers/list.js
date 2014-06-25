@@ -7,6 +7,7 @@ var postC = Alloy.Collections.instance('post');
 postC.on('reset add',function(){
 	var items = [];	
 	
+	
 	postC.each(function(model){
 		Ti.API.info(model.attributes);
 		items.push({
@@ -31,5 +32,12 @@ postC.on('reset add',function(){
 	$.section.items = items;
 });
 
-postC.fetch();
+postC.fetch({
+	success: function(){
+		alert('succ');
+	},
+	error : function(){
+		alert('err');
+	}
+});
 

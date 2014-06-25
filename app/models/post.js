@@ -1,10 +1,14 @@
 exports.definition = {
 	config: {
-
 		adapter: {
-			type: "properties",
-			collection_name: "post"
-		}
+			type: "acs",
+			
+		},
+	    "settings": {
+	        "object_name": "posts",
+	        "object_method": "Posts"
+	    }
+	    
 	},
 	extendModel: function(Model) {
 		_.extend(Model.prototype, {
